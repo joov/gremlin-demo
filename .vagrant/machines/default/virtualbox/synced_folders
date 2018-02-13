@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/DEVSSE/git/gremlin-demo","disabled":false,"__vagrantfile":true},"vagrant-cache":{"id":"vagrant-cache","guestpath":"/tmp/vagrant-cache","hostpath":"C:/DEVSSE/git/gremlin-demo/.vagrant/machines/default/cache","disabled":false,"__vagrantfile":true}}}
