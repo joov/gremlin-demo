@@ -14,7 +14,7 @@ Then you can start with `vagrant up`, ssh into the vbox (e.g. with putty)
 and start the docker-containers there (Login is `vagrant`/`vagrant`, directory is `/vagrant`, )
 
 ## To start
-Just open http://localhost:8183 in your browser. In the screen press the `search`-button
+Just open http://localhost:8183 in your browser. In the screen press the `Search`-button
 
 ## Acknowledgements
 This work relies on [graphexp](https://github.com/bricaud/graphexp) and [Gremlin-Server](https://hub.docker.com/r/bricaud/gremlin-server-with-demo-graph/) by [Benjamin Ricaud](https://github.com/bricaud/).
