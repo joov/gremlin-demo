@@ -11,7 +11,7 @@ If you have docker-compose running you can simply start by tying
 
 If you are on a windows machine, install vagrant and virtualbox.
 Then you can start with `vagrant up`, ssh into the vbox (e.g. with putty)
-and start the docker-containers there (directory is `/vagrant`, Login is `vagrant`/`vagrant`)
+and start the docker-containers there (Login is `vagrant`/`vagrant`, directory is `/vagrant`, )
 
 ## To start
 Just open http://localhost:8183 in your browser. In the screen press the `search`-button
