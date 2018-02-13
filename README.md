@@ -20,5 +20,5 @@ Just open http://localhost:8183 in your browser. In the screen press the `Search
 This work relies on [graphexp](https://github.com/bricaud/graphexp) and [Gremlin-Server](https://hub.docker.com/r/bricaud/gremlin-server-with-demo-graph/) by [Benjamin Ricaud](https://github.com/bricaud/).
 
 ## License
-See [LICENSE](https://github.com/joov/gremlin-demo/LICENSE). Graphexp is covered by [Apache-2.0-License](https://www.apache.org/licenses/LICENSE-2.0) and Gremplin-Server is covered by [MIT-License](https://github.com/bricaud/gremlin-server/blob/master/LICENSE).
+See [LICENSE](https://github.com/joov/gremlin-demo/LICENSE). Graphexp is covered by [Apache-2.0-License](https://www.apache.org/licenses/LICENSE-2.0) and Gremlin-Server is covered by [MIT-License](https://github.com/bricaud/gremlin-server/blob/master/LICENSE).
 
