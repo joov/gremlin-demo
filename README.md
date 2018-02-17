@@ -9,9 +9,11 @@ Both are started as docker-containers from a docker-compose file.
 If you have docker-compose running you can simply start by tying 
 `docker-compose up -d`
 
-If you are on a windows machine, install vagrant and virtualbox.
+If you are on a windows machine and do not have native docker support (Win 8.1 and below), install vagrant and virtualbox.
 Then you can start with `vagrant up`, ssh into the vbox (e.g. with putty)
 and start the docker-containers there (Login is `vagrant`/`vagrant`, directory is `/vagrant`, )
+
+If you are on linux or on Windows 10 you just can start with `docker-compose`.
 
 ## To start
 Just open http://localhost:8183 in your browser. In the screen press the `Search`-button
