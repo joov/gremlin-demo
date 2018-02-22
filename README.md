@@ -13,7 +13,7 @@ If you are on a windows machine and do not have native docker support (Win 8.1 a
 Then you can start with `vagrant up`, ssh into the vbox (e.g. with putty)
 and start the docker-containers there (Login is `vagrant`/`vagrant`, directory is `/vagrant`, )
 
-If you are on linux or on Windows 10 you just can start with `docker-compose`.
+If you are on linux or on Windows 10 you just can install docker-compose natively and start with `docker-compose`.
 
 ## To start
 Just open http://localhost:8183 in your browser. In the screen press the `Search`-button
