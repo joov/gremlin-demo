@@ -13,7 +13,7 @@ RUN apt-get update && \
     cd /tmp && \
     wget  https://github.com/bricaud/graphexp/archive/master.zip && \
     unzip master.zip && \
-    sed 's/const HOST = "localhost"/const HOST = "gremlin"/' graphexp-master/scripts/graphConf.js > graphConf.js && \
+    sed 's/const HOST = "localhost"/const HOST = self.location.hostname/' graphexp-master/scripts/graphConf.js > graphConf.js && \
     mv graphConf.js graphexp-master/scripts && \
     mv graphexp-master/*  /usr/share/nginx/html && \
     rm -R /tmp/graphexp-master && \
