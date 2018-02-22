@@ -5,18 +5,14 @@
 #
 version: '3'
 
-networks:
-  basic:
- 
 services:
   gremlin:
     image: bricaud/gremlin-server-with-demo-graph
     ports:
       - "8182:8182"
-    networks:
-      - basic
       
   graphexp:
+    image: joov/graphexp:0.1
     build:
       context: ./graphexp
       args:
@@ -24,8 +20,8 @@ services:
         https_proxy: ${https_proxy}
         no_proxy: ${no_proxy}
     ports:
-      - "8183:8183"
-    networks:
-      - basic
+      - "8183:80"
+    depends_on:
+      - gremlin
 
 

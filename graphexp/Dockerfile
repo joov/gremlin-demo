@@ -1,6 +1,6 @@
-FROM python:slim
+FROM nginx:1.13.9
 
-MAINTAINER Johannes Wenzel <johannes.wenzel@schoenhofer.de>
+LABEL maintainer="johannes.wenzel@schoenhofer.de"
 
 ENV http_proxy $http_proxy
 ENV https_proxy $https_proxy
@@ -9,14 +9,23 @@ ENV PATH /usr/local/bin:$PATH
 
 
 RUN apt-get update && \
-    apt-get -y install git && \
-    git clone https://github.com/bricaud/graphexp.git
+    apt-get -y install wget unzip && \
+    cd /tmp && \
+    wget  https://github.com/bricaud/graphexp/archive/master.zip && \
+    unzip master.zip && \
+    sed 's/const HOST = "localhost"/const HOST = "gremlin"/' graphexp-master/scripts/graphConf.js > graphConf.js && \
+    mv graphConf.js graphexp-master/scripts && \
+    mv graphexp-master/*  /usr/share/nginx/html && \
+    rm -R /tmp/graphexp-master && \
+    apt-get remove -y wget && \
+    apt-get remove -y unzip && \
+    rm -R /var/lib/apt/lists/*
+
+
+
 	
-WORKDIR /graphexp
+WORKDIR  /usr/share/nginx/html
 
-EXPOSE 8183
-
-CMD ["python3",  "-m", "http.server",  "8183"]
 	
 
 
